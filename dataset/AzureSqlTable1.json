@@ -1,0 +1,70 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "channel_title",
+				"type": "nvarchar"
+			},
+			{
+				"name": "title",
+				"type": "nvarchar"
+			},
+			{
+				"name": "published_at",
+				"type": "nvarchar"
+			},
+			{
+				"name": "view_count",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "like_count",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "dislike_count",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "reaction_total",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "like_percentage",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "dislike_percentage",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "publish_year",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "publish_week_month",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "youtube_khan_academy_dataset$"
+		}
+	}
+}
